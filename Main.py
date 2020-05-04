@@ -1,10 +1,8 @@
 import requests
 import telebot
 from telebot import types
-from requests.auth import HTTPBasicAuth
 
-
-response = requests.get('http://185.75.181.51/InfoErp/hs/GetTickets/', auth = HTTPBasicAuth('usus', '123'))
+response = requests.get('http://185.75.181.51/InfoErp/hs/GetTickets/', auth = requests.auth.HTTPBasicAuth('usus', '123'))
 
 total= response.text
 
