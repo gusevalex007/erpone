@@ -4,7 +4,7 @@ from telebot import types
 
 response = requests.get('http://185.75.181.51/InfoErp/hs/GetTickets/', auth = requests.auth.HTTPBasicAuth('usus', '123'))
 
-total= response.text
+total= str(response.text)
 
 bot = telebot.TeleBot('1271443472:AAEWba4JvbFKXVfJ5VOxuoZY2OiDrZF_4SM')
 
