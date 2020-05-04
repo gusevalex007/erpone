@@ -37,4 +37,4 @@ def mess(message):
     final_message = f"<u>Данные по тикетам:</u>\n<b>Решено: </b>{info:,}"
     bot.send_message(message.chat.id, final_message, parse_mode='html')
 
-#bot.polling(none_stop=True)
+bot.polling(none_stop=True)
