@@ -2,8 +2,8 @@ import requests
 import telebot
 from telebot import types
 
-#response = requests.get('http://usus:123@185.75.181.51/InfoErp/hs/GetTickets/')
-total= 5555#response.text
+response = requests.get('http://185.75.181.51/InfoErp/hs/GetTickets/', auth=('usus', '123'))
+total= response.text
 
 bot = telebot.TeleBot('1271443472:AAEWba4JvbFKXVfJ5VOxuoZY2OiDrZF_4SM')
 
